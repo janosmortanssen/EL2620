@@ -1,4 +1,4 @@
-### A system identification toolbox for the Julia programming language
+### A system identification toolbox for Julia
 
 #### Cristian R. Rojas and Bo Wahlberg
 
