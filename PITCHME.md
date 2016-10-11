@@ -47,7 +47,7 @@ http://julialang.org
 
 ### Fast!
 
-![Benchmark](figures/Benchmark.png)
+![Benchmark](figures/benchmark.png)
 
 #HSLIDE
 
