@@ -1,6 +1,6 @@
-## A system identification toolbox for the Julia programming language
+### A system identification toolbox for the Julia programming language
 
-### Cristian R. Rojas and Bo Wahlberg
+#### Cristian R. Rojas and Bo Wahlberg
 
 Department of Automatic Control, EES
 
