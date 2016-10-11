@@ -1,6 +1,10 @@
-# Flux
+# A system identification toolbox for the Julia programming language
 
-An application architecture for React
+## Cristian R. Rojas and Bo Wahlberg
+
+Department of Automatic Control, EES
+
+ACCESS Summer Project 2015
 
 #HSLIDE
 
