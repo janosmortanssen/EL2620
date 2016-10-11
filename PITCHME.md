@@ -1,19 +1,20 @@
 ### A system identification toolbox for Julia
 
-#### Cristian R. Rojas and Bo Wahlberg
+#### Cristian R. Rojas, Arda Aytekin and Niklas Everitt
 
-Department of Automatic Control, EES
+Department of Automatic Control, KTH
 
-ACCESS Summer Project 2015
-
-#HSLIDE
-
-### Flux Design
-
-- Dispatcher: Manages Data Flow
-- Stores: Handle State & Logic
-- Views: Render Data via React
 
 #HSLIDE
 
-![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+### Background
+
+- Good software is essential for EE courses at Bachelor and MSc level
+- Currently MATLAB® is our main platform, with great variety of toolboxes for control, signal processing, identification, statistics, power systems, ...
+
+![Education](figures/education.png)
+
+#HSLIDE
+
+![Flux Explained](figures/education.png)
+
