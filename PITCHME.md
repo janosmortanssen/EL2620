@@ -1,4 +1,5 @@
-### A system identification toolbox for Julia
+### A system identification toolbox
+### for the Julia programming language
 
 #### Cristian R. Rojas
 #### Arda Aytekin
