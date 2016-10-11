@@ -1,6 +1,8 @@
 ### A system identification toolbox for Julia
 
-#### Cristian R. Rojas, Arda Aytekin and Niklas Everitt
+#### Cristian R. Rojas
+#### Arda Aytekin
+#### Niklas Everitt
 
 Department of Automatic Control, KTH
 
