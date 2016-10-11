@@ -12,7 +12,7 @@ Department of Automatic Control, KTH
 - Good software is essential for EE courses at Bachelor and MSc level
 - Currently MATLAB® is our main platform, with great variety of toolboxes for control, signal processing, identification, statistics, power systems, ...
 
-![Education](figures/education.png)
+![Education](https://github.com/CristianRojas/Talk/blob/master/figures/education.png)
 
 #HSLIDE
 
