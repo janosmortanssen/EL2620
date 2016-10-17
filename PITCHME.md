@@ -1,7 +1,7 @@
 ### System Identification and
 ### Control Functionality in JULIA
 
-**Cristian R. Rojas**, **Arda Aytekin** and **Niklas Everitt**
+**Cristian R. Rojas**, **Arda Aytekin** **and** **Niklas Everitt**
 
 **Department of Automatic Control, KTH**
 
