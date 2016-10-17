@@ -1,6 +1,7 @@
-#### System Identification and Control Functionality in JULIA
+### System Identification and
+### Control Functionality in JULIA
 
-**Cristian R. Rojas**, **Arda Aytekin**, **Niklas Everitt**
+**Cristian R. Rojas**, **Arda Aytekin** and **Niklas Everitt**
 
 **Department of Automatic Control, KTH**
 
@@ -11,32 +12,33 @@
 - Good software is essential for building engineering applications,
 - Currently MATLAB is our main platform, with great variety of toolboxes for
   control, signal processing, identification, statistics, power systems, ...
+- Matlab is also the main platform for research and industrial use in automatic control
 
-![Education](figures/education.png)
+<img src="figures/education.png" style="width: 400px;" align="right" />
 
 #HSLIDE
 
 #### Drawbacks
 
-- Expensive,
-- Many toolboxes with closed-source code,
-- Black-box GUIs hiding details,
-- Limited group of contributors,
-- Sometimes slow, ...
+- Expensive
+- Many toolboxes with closed-source code
+- Black-box GUIs hiding details
+- Limited group of contributors
+- Sometimes slow ...
 
-![Toolboxes](figures/toolboxes.png)
+<img src="figures/toolboxes.png" style="width: 300px;" align="right" />
 
 #HSLIDE
 
 #### A Recent Alternative: [JULIA](http://julialang.org/)
 
-- Free and open source,
-- High-level language (like MATLAB, Python),
-- Yet, high performance (like C, FORTRAN),
-- Fast growing ecosystem of libraries,
+- Free and open source
+- High-level language (like MATLAB, Python)
+- Yet, high performance (like C, FORTRAN)
+- Fast growing ecosystem of libraries
 - Already adopted for classroom teaching at MIT, Stanford, Cornell, ...
 
-![Julia](figures/Julia.png)
+<img src="figures/Julia.png" style="width: 200px;" align="right" />
 
 #VSLIDE
 
@@ -48,42 +50,29 @@
 
 #### However ...
 
-- Currently (almost) no support for control and system identification.
+- Until recently (2015), (almost) no support for control and system identification
 
-![Control](figures/closed_loop.png)
-
-#VSLIDE
-
-#### [`ControlSystems.jl`](https://github.com/JuliaControl/ControlSystems.jl)
-
-- An attempt to provide core analysis and design functionality for control
-  systems,
-- Support for plotting,
-- No support for system identification,
-- Not flexible type system (one type to represent all),
-- Hardcoded types (dense matrices of double precision values),
-- Hard to read and maintain,
-- Lacks testing (some bugs),
-- Not modular (will follow later),
-- Not social (re-definition of Polynomials).
+<img src="figures/closed_loop.png" style="width: 600px;"/>
 
 #HSLIDE
 
 #### Ultimate Goal
 
-- Provide a free, open and extensible ecosystem of packages,
-- **For Users:** Simple to read, transparent and well-documented, and,
-- **For Developers:** Compact, modular and easy to maintain.
+- Provide a free, open and extensible ecosystem of packages
+
+- **For Users:** Simple to read, transparent and well-documented, and
+
+- **For Developers:** Compact, modular and easy to maintain
 
 #VSLIDE
 
 #### More Specifically ...
 
 - Basic data types: Different LTI representations and their interactions
-  (`ControlCore.jl`),
-- Interfaces and contracts for compatiblity among packages (`ControlCore.jl`),
-- Basic estimation functionality (`IdentificationToolbox.jl`),
-- Basic analysis and design functionality (`ControlToolbox.jl`),
+  (`ControlCore.jl`)
+- Interfaces and contracts for compatiblity among packages (`ControlCore.jl`)
+- Basic estimation functionality (`IdentificationToolbox.jl`)
+- Basic analysis and design functionality (`ControlToolbox.jl`)
 - ... maybe some more (`MPCToolbox.jl`)?
 
 #HSLIDE
@@ -104,7 +93,7 @@
 
 #### Parametric Types
 
-- Needed for efficient, compact and flexible representations.
+- Needed for efficient, compact and flexible representations
 
 ```julia
 immutable StateSpace{T,S,M<:AbstractMatrix} <: LtiSystem{T,S}
@@ -127,7 +116,7 @@ ss2 = StateSpace(A2,B2,C2,D2);
 
 #### Interfaces and Contracts
 
-- A set of interface functions needed for inter-operability.
+- A set of interface functions needed for inter-operability
 
 ```julia
 # at ControlCore.jl
@@ -166,9 +155,9 @@ end
 
 **Current Status**
 
-- Gradient based search (PEM),
-- Instrumental variables (IV4), and,
-- Subspace method (N4SID).
+- Gradient based search (PEM)
+- Instrumental variables (IV4), and
+- Subspace method (N4SID)
 
 #VSLIDE
 
@@ -185,8 +174,8 @@ end
 
 **Current Status**
 
-- `lsim`: `step`, `impulse`,
-- `rlocus`, and,
-- discretization.
+- `lsim`: `step`, `impulse`
+- `rlocus`, and
+- discretization
 
 **Note:** Needs re-structuring and some more work.
