@@ -14,7 +14,7 @@
   control, signal processing, identification, statistics, power systems, ...
 - Matlab is also the main platform for research and industrial use in automatic control
 
-<img src="figures/education.png" style="width: 400px;" align="right" />
+<img src="figures/education.png" style="width: 300px;" align="right" />
 
 #HSLIDE
 
@@ -26,7 +26,7 @@
 - Limited group of contributors
 - Sometimes slow ...
 
-<img src="figures/toolboxes.png" style="width: 300px;" align="right" />
+<img src="figures/toolboxes.png" style="width: 250px;" align="right" />
 
 #HSLIDE
 
