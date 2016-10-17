@@ -67,7 +67,7 @@ Department of Automatic Control, KTH
 - Hard to read and maintain,
 - Lacks testing (some bugs),
 - Not modular (will follow later),
-- Not social (i.e., internal representation of Polynomials).
+- Not social (re-definition of Polynomials).
 
 #HSLIDE
 
@@ -85,9 +85,8 @@ Department of Automatic Control, KTH
   (`ControlCore.jl`),
 - Interfaces and contracts for compatiblity among packages (`ControlCore.jl`),
 - Basic estimation functionality (`IdentificationToolbox.jl`),
-- Basic analysis functionality (`ControlToolbox.jl`),
-- Basic (optimal) design functionality (`MPCToolbox.jl`),
-- ... maybe some more?
+- Basic analysis and design functionality (`ControlToolbox.jl`),
+- ... maybe some more (`MPCToolbox.jl`)?
 
 #HSLIDE
 
