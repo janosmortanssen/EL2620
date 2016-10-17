@@ -62,7 +62,7 @@ Department of Automatic Control, KTH
   systems,
 - Support for plotting,
 - No support for system identification,
-- Not flexible type system (one type to represent them all),
+- Not flexible type system (one type to represent all),
 - Hardcoded types (dense matrices of double precision values),
 - Hard to read and maintain,
 - Lacks testing (some bugs),
@@ -74,7 +74,7 @@ Department of Automatic Control, KTH
 ### Ultimate Goal
 
 - Provide a free, open and extensible ecosystem of packages,
-- **For Users:** Simple to read, transparent and well-documented,
+- **For Users:** Simple to read, transparent and well-documented, and,
 - **For Developers:** Compact, modular and easy to maintain.
 
 #VSLIDE
@@ -143,7 +143,11 @@ end
 function isstable{T}(sys::ControlCore.LtiSystem{T,Discrete{false}})
   return all(real(poles(sys)) .< 0.)
 end
+```
 
+#VSLIDE
+
+```julia
 # From SystemIdentification.jl perspective
 immutable IdType{T,S,U} <: ControlCore.LtiSystem{T,S}
   sys::U
@@ -156,3 +160,28 @@ end
 
 # `isstable(sys::IdType)` will simply work
 ```
+
+#HSLIDE
+
+##### `IdentificationToolbox.jl`: Current Status
+
+- Gradient based search (PEM),
+- Instrumental variables (IV4), and,
+- Subspace method (N4SID).
+
+#VSLIDE
+
+##### `IdentificationToolbox.jl`: Open Issues
+
+- Standardization (separate interface from implementation),
+- Other approaches such as frequency domain methods, ...
+
+#VSLIDE
+
+#### `ControlToolbox.jl`: Current Status
+
+- `lsim`: `step`, `impulse`,
+- `rlocus`, and,
+- discretization.
+
+**Note:** Needs re-structuring and some more work.
