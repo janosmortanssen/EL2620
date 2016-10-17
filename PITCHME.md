@@ -1,14 +1,12 @@
-### System Identification and Control Functionality in JULIA
+#### System Identification and Control Functionality in JULIA
 
-#### Cristian R. Rojas
-#### Arda Aytekin
-#### Niklas Everitt
+**Cristian R. Rojas**, **Arda Aytekin**, **Niklas Everitt**
 
-Department of Automatic Control, KTH
+**Department of Automatic Control, KTH**
 
 #HSLIDE
 
-### Background
+#### Background
 
 - Good software is essential for building engineering applications,
 - Currently MATLAB is our main platform, with great variety of toolboxes for
@@ -18,7 +16,7 @@ Department of Automatic Control, KTH
 
 #HSLIDE
 
-### Drawbacks
+#### Drawbacks
 
 - Expensive,
 - Many toolboxes with closed-source code,
@@ -30,7 +28,7 @@ Department of Automatic Control, KTH
 
 #HSLIDE
 
-### A Recent Alternative: [JULIA](http://julialang.org/)
+#### A Recent Alternative: [JULIA](http://julialang.org/)
 
 - Free and open source,
 - High-level language (like MATLAB, Python),
@@ -42,13 +40,13 @@ Department of Automatic Control, KTH
 
 #VSLIDE
 
-### Did We Mention FAST?
+#### Did We Mention FAST?
 
 ![Benchmark](figures/benchmark.png)
 
 #HSLIDE
 
-### However ...
+#### However ...
 
 - Currently (almost) no support for control and system identification.
 
@@ -56,7 +54,7 @@ Department of Automatic Control, KTH
 
 #VSLIDE
 
-### ControlSystems.jl
+#### [`ControlSystems.jl`](https://github.com/JuliaControl/ControlSystems.jl)
 
 - An attempt to provide core analysis and design functionality for control
   systems,
@@ -71,7 +69,7 @@ Department of Automatic Control, KTH
 
 #HSLIDE
 
-### Ultimate Goal
+#### Ultimate Goal
 
 - Provide a free, open and extensible ecosystem of packages,
 - **For Users:** Simple to read, transparent and well-documented, and,
@@ -79,7 +77,7 @@ Department of Automatic Control, KTH
 
 #VSLIDE
 
-### More Specifically ...
+#### More Specifically ...
 
 - Basic data types: Different LTI representations and their interactions
   (`ControlCore.jl`),
@@ -90,7 +88,7 @@ Department of Automatic Control, KTH
 
 #HSLIDE
 
-### `ControlCore.jl`
+#### [`ControlCore.jl`](https://github.com/KTH-AC/ControlCore.jl)
 
 - Learn from mature packages such as `MathProgBase.jl`, `LearnBase.jl`, ...
 
@@ -98,13 +96,13 @@ Department of Automatic Control, KTH
 
 #VSLIDE
 
-### Basic Data Types
+#### Basic Data Types
 
 **OBS:** Insert type diagram here.
 
 #VSLIDE
 
-### Parametric Types
+#### Parametric Types
 
 - Needed for efficient, compact and flexible representations.
 
@@ -127,7 +125,7 @@ ss2 = StateSpace(A2,B2,C2,D2);
 
 #VSLIDE
 
-### Interfaces and Contracts
+#### Interfaces and Contracts
 
 - A set of interface functions needed for inter-operability.
 
@@ -146,6 +144,8 @@ end
 
 #VSLIDE
 
+#### Interfaces and Contracts
+
 ```julia
 # From SystemIdentification.jl perspective
 immutable IdType{T,S,U} <: ControlCore.LtiSystem{T,S}
@@ -162,7 +162,9 @@ end
 
 #HSLIDE
 
-##### `IdentificationToolbox.jl`: Current Status
+##### [`IdentificationToolbox.jl`](https://github.com/KTH-AC/IdentificationToolbox.jl)
+
+**Current Status**
 
 - Gradient based search (PEM),
 - Instrumental variables (IV4), and,
@@ -170,14 +172,18 @@ end
 
 #VSLIDE
 
-##### `IdentificationToolbox.jl`: Open Issues
+##### [`IdentificationToolbox.jl`](https://github.com/KTH-AC/IdentificationToolbox.jl)
+
+**Open Issues**
 
 - Standardization (separate interface from implementation),
 - Other approaches such as frequency domain methods, ...
 
 #VSLIDE
 
-#### `ControlToolbox.jl`: Current Status
+##### [`ControlToolbox.jl`](https://github.com/KTH-AC/ControlToolbox.jl)
+
+**Current Status**
 
 - `lsim`: `step`, `impulse`,
 - `rlocus`, and,
