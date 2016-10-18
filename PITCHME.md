@@ -52,7 +52,7 @@
 
 - Until recently (2015), (almost) no support for control and system identification
 
-<img src="figures/closed_loop.png" style="width: 600px;"/>
+<img src="figures/block-diagram.png" style="width: 600px;"/>
 
 #HSLIDE
 
@@ -81,13 +81,13 @@
 
 - Learn from mature packages such as `MathProgBase.jl`, `LearnBase.jl`, ...
 
-**OBS:** Insert package diagram here.
+<img src="figures/package-diagram.png" style="width: 600px;"/>
 
 #VSLIDE
 
 #### Basic Data Types
 
-**OBS:** Insert type diagram here.
+<img src="figures/class-diagram.png" style="width: 600px;"/>
 
 #VSLIDE
 
