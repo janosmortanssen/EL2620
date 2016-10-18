@@ -168,7 +168,7 @@ end
 - Standardization (separate interface from implementation),
 - Other approaches such as frequency domain methods, ...
 
-#VSLIDE
+#HSLIDE
 
 ##### [`ControlToolbox.jl`](https://github.com/KTH-AC/ControlToolbox.jl)
 
@@ -179,3 +179,7 @@ end
 - discretization
 
 **Note:** Needs re-structuring and some more work.
+
+#HSLIDE
+
+### Thanks!
