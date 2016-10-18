@@ -1,22 +1,24 @@
-### System Identification and
-### Control Functionality in JULIA
+### System Identification and Control Functionality in JULIA
 
-**Cristian R. Rojas**, **Arda Aytekin** **and** **Niklas Everitt**
+[Cristian R. Rojas](mailto:crro@kth.se), [Arda Aytekin](mailto:aytekin@kth.se)
+and [Niklas Everitt](mailto:neveritt@kth.se)
 
-**Department of Automatic Control, KTH**
+**Department of Automatic Control**,
 
-#HSLIDE
+**KTH Royal Institute of Technology**
+
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### Background
 
 - Good software is essential for building engineering applications,
 - Currently MATLAB is our main platform, with great variety of toolboxes for
   control, signal processing, identification, statistics, power systems, ...
-- Matlab is also the main platform for research and industrial use in automatic control
+- MATLAB is also the main platform for research and industrial use in automatic control
 
 <img src="figures/education.png" style="width: 300px;" align="right" />
 
-#HSLIDE
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### Drawbacks
 
@@ -28,7 +30,7 @@
 
 <img src="figures/toolboxes.png" style="width: 250px;" align="right" />
 
-#HSLIDE
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### A Recent Alternative: [JULIA](http://julialang.org/)
 
@@ -40,21 +42,21 @@
 
 <img src="figures/Julia.png" style="width: 200px;" align="right" />
 
-#VSLIDE
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Did We Mention FAST?
 
-![Benchmark](figures/benchmark.png)
+<img src="figures/benchmark.png" />
 
-#HSLIDE
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### However ...
 
 - Until recently (2015), (almost) no support for control and system identification
 
-<img src="figures/block-diagram.png" style="width: 600px;"/>
+<img src="figures/block-diagram.png" style="width: 600px;" />
 
-#HSLIDE
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### Ultimate Goal
 
@@ -64,7 +66,7 @@
 
 - **For Developers:** Compact, modular and easy to maintain
 
-#VSLIDE
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### More Specifically ...
 
@@ -75,21 +77,21 @@
 - Basic analysis and design functionality (`ControlToolbox.jl`)
 - ... maybe some more (`MPCToolbox.jl`)?
 
-#HSLIDE
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### [`ControlCore.jl`](https://github.com/KTH-AC/ControlCore.jl)
 
 - Learn from mature packages such as `MathProgBase.jl`, `LearnBase.jl`, ...
 
-<img src="figures/package-diagram.png" style="width: 600px;"/>
+<img src="figures/package-diagram.png" style="width: 600px;" />
 
-#VSLIDE
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Basic Data Types
 
-<img src="figures/class-diagram.png" style="width: 600px;"/>
+<img src="figures/class-diagram.png" style="width: 600px;" />
 
-#VSLIDE
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Parametric Types
 
@@ -104,15 +106,15 @@ immutable StateSpace{T,S,M<:AbstractMatrix} <: LtiSystem{T,S}
 end
 
 # Dense matrices
-A1 = eye(N,N); B1 = randn(N,M); C1 = randn(P,N); D1 = randn(P,M);
-# Sparse representations
-A2 = speye(N,N); B2 = randn(N,M); C2 = randn(P,N); D2 = randn(P,M);
-
+A1  = eye(N,N); B1 = randn(N,M); C1 = randn(P,N); D1 = randn(P,M);
 ss1 = StateSpace(A1,B1,C1,D1);
+
+# Sparse representations
+A2  = speye(N,N); B2 = randn(N,M); C2 = randn(P,N); D2 = randn(P,M);
 ss2 = StateSpace(A2,B2,C2,D2);
 ```
 
-#VSLIDE
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Interfaces and Contracts
 
@@ -126,12 +128,13 @@ ss2 = StateSpace(A2,B2,C2,D2);
 function isstable{T}(sys::ControlCore.LtiSystem{T,Discrete{true}})
   return all(abs(poles(sys)) .< 1.)
 end
+
 function isstable{T}(sys::ControlCore.LtiSystem{T,Discrete{false}})
   return all(real(poles(sys)) .< 0.)
 end
 ```
 
-#VSLIDE
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Interfaces and Contracts
 
@@ -149,28 +152,24 @@ end
 # `isstable(sys::IdType)` will simply work
 ```
 
-#HSLIDE
+#HSLIDE?image=assets/kth-one-color-plane.png
 
-##### [`IdentificationToolbox.jl`](https://github.com/KTH-AC/IdentificationToolbox.jl)
+#### [`IdentificationToolbox.jl`](https://github.com/KTH-AC/IdentificationToolbox.jl)
 
 **Current Status**
 
-- Gradient based search (PEM)
+- Hessian based search (PEM)
 - Instrumental variables (IV4), and
 - Subspace method (N4SID)
 
-#VSLIDE
+**Open Issues** <!-- .element: class="fragment" -->
 
-##### [`IdentificationToolbox.jl`](https://github.com/KTH-AC/IdentificationToolbox.jl)
+- Standardization (separate interface from implementation), <!-- .element: class="fragment" -->
+- Other approaches such as frequency domain methods, ...    <!-- .element: class="fragment" -->
 
-**Open Issues**
+#HSLIDE?image=assets/kth-one-color-plane.png
 
-- Standardization (separate interface from implementation),
-- Other approaches such as frequency domain methods, ...
-
-#HSLIDE
-
-##### [`ControlToolbox.jl`](https://github.com/KTH-AC/ControlToolbox.jl)
+#### [`ControlToolbox.jl`](https://github.com/KTH-AC/ControlToolbox.jl)
 
 **Current Status**
 
@@ -180,6 +179,6 @@ end
 
 **Note:** Needs re-structuring and some more work.
 
-#HSLIDE
+#HSLIDE?image=assets/kth-one-color-plane.png
 
-### Thanks!
+#### Thanks!
