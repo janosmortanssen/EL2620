@@ -40,6 +40,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 - Free and open source
 - High-level language (like MATLAB, Python)
 - Yet, high performance (like C, FORTRAN)
+- Ability to generate low-level code for embedding (via LLVM)
 - Fast growing ecosystem of libraries
 - Already adopted for classroom teaching at MIT, Stanford, Cornell, ...
 
@@ -116,12 +117,32 @@ immutable StateSpace{T,S,M<:AbstractMatrix} <: LtiSystem{T,S}
 end
 
 # Dense matrices
-A1  = eye(N,N); B1 = randn(N,M); C1 = randn(P,N); D1 = randn(P,M);
-ss1 = StateSpace(A1,B1,C1,D1);
+julia> A1  = eye(N,N); B1 = randn(N,M); C1 = randn(P,N); D1 = randn(P,M);
+julia> ss1 = StateSpace(A1,B1,C1,D1);
 
 # Sparse representations
-A2  = speye(N,N); B2 = randn(N,M); C2 = randn(P,N); D2 = randn(P,M);
-ss2 = StateSpace(A2,B2,C2,D2);
+julia> A2  = speye(N,N); B2 = randn(N,M); C2 = randn(P,N); D2 = randn(P,M);
+julia> ss2 = StateSpace(A2,B2,C2,D2);
+```
+
+#VSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
+
+#### Parametric Types
+
+- Also allows for efficient low-level code generation
+
+```julia
+julia> f(x::Number, y::Number) = x+y
+f (generic function with 1 method)
+
+julia> @code_llvm f(1., 2.)
+
+define double @julia_f_70581(double, double) #0 {
+top:
+  %2 = fadd double %0, %1
+    ret double %2
+}
 ```
 
 #VSLIDE
