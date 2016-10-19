@@ -7,18 +7,20 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 **KTH Royal Institute of Technology**
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Background
 
-- Good software is essential for building engineering applications,
-- Currently MATLAB is our main platform, with great variety of toolboxes for
+- Good software is essential for building engineering applications
+- Currently MATLAB is our main platform for education, research and industrial use in automatic control
+- Great variety of toolboxes for
   control, signal processing, identification, statistics, power systems, ...
-- MATLAB is also the main platform for research and industrial use in automatic control
 
-<img src="figures/education.png" style="width: 300px;" align="right" />
+<img src="figures/education.png" style="width: 400px;" align="right" />
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Drawbacks
 
@@ -28,9 +30,10 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 - Limited group of contributors
 - Sometimes slow ...
 
-<img src="figures/toolboxes.png" style="width: 250px;" align="right" />
+<img src="figures/toolboxes.png" style="width: 300px;" align="right" />
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### A Recent Alternative: [JULIA](http://julialang.org/)
 
@@ -40,23 +43,26 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 - Fast growing ecosystem of libraries
 - Already adopted for classroom teaching at MIT, Stanford, Cornell, ...
 
-<img src="figures/Julia.png" style="width: 200px;" align="right" />
+<img src="figures/Julia.png" style="width: 300px;" align="right" />
 
-#VSLIDE?image=assets/kth-one-color-plane.png
+#VSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Did We Mention FAST?
 
 <img src="figures/benchmark.png" />
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### However ...
 
 - Until recently (2015), (almost) no support for control and system identification
 
-<img src="figures/block-diagram.png" style="width: 600px;" />
+<img src="figures/block-diagram.png" style="width: 800px;" />
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Ultimate Goal
 
@@ -66,7 +72,8 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 - **For Developers:** Compact, modular and easy to maintain
 
-#VSLIDE?image=assets/kth-one-color-plane.png
+#VSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### More Specifically ...
 
@@ -77,21 +84,24 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 - Basic analysis and design functionality (`ControlToolbox.jl`)
 - ... maybe some more (`MPCToolbox.jl`)?
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### [`ControlCore.jl`](https://github.com/KTH-AC/ControlCore.jl)
 
 - Learn from mature packages such as `MathProgBase.jl`, `LearnBase.jl`, ...
 
-<img src="figures/package-diagram.png" style="width: 600px;" />
+<img src="figures/package-diagram.png" style="width: 800px;" />
 
-#VSLIDE?image=assets/kth-one-color-plane.png
+#VSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Basic Data Types
 
-<img src="figures/class-diagram.png" style="width: 600px;" />
+<img src="figures/class-diagram.png" style="width: 800px;" />
 
-#VSLIDE?image=assets/kth-one-color-plane.png
+#VSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Parametric Types
 
@@ -114,7 +124,8 @@ A2  = speye(N,N); B2 = randn(N,M); C2 = randn(P,N); D2 = randn(P,M);
 ss2 = StateSpace(A2,B2,C2,D2);
 ```
 
-#VSLIDE?image=assets/kth-one-color-plane.png
+#VSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Interfaces and Contracts
 
@@ -134,7 +145,8 @@ function isstable{T}(sys::ControlCore.LtiSystem{T,Discrete{false}})
 end
 ```
 
-#VSLIDE?image=assets/kth-one-color-plane.png
+#VSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Interfaces and Contracts
 
@@ -152,7 +164,8 @@ end
 # `isstable(sys::IdType)` will simply work
 ```
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### [`IdentificationToolbox.jl`](https://github.com/KTH-AC/IdentificationToolbox.jl)
 
@@ -167,7 +180,8 @@ end
 - Standardization (separate interface from implementation), <!-- .element: class="fragment" -->
 - Other approaches such as frequency domain methods, ...    <!-- .element: class="fragment" -->
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### [`ControlToolbox.jl`](https://github.com/KTH-AC/ControlToolbox.jl)
 
@@ -179,6 +193,7 @@ end
 
 **Note:** Needs re-structuring and some more work.
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
+[comment]: ?image=assets/kth-one-color-plane.png
 
 #### Thanks!
