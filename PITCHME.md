@@ -7,8 +7,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 **KTH Royal Institute of Technology**
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### Background
 
@@ -19,8 +18,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 <img src="figures/education.png" style="width: 400px;" align="right" />
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### Drawbacks
 
@@ -32,8 +30,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 <img src="figures/toolboxes.png" style="width: 300px;" align="right" />
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### A Recent Alternative: [JULIA](http://julialang.org/)
 
@@ -46,15 +43,13 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 <img src="figures/Julia.png" style="width: 300px;" align="right" />
 
-#VSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Did We Mention FAST?
 
 <img src="figures/benchmark.png" />
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### However ...
 
@@ -62,8 +57,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 <img src="figures/block-diagram.png" style="width: 800px;" />
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### Ultimate Goal
 
@@ -73,8 +67,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 - **For Developers:** Compact, modular and easy to maintain
 
-#VSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### More Specifically ...
 
@@ -85,8 +78,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 - Basic analysis and design functionality (`ControlToolbox.jl`)
 - ... maybe some more (`MPCToolbox.jl`)?
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### [`ControlCore.jl`](https://github.com/KTH-AC/ControlCore.jl)
 
@@ -94,15 +86,13 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 <img src="figures/package-diagram.png" style="width: 800px;" />
 
-#VSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Basic Data Types
 
 <img src="figures/class-diagram.png" style="width: 800px;" />
 
-#VSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Parametric Types
 
@@ -125,8 +115,7 @@ julia> A2  = speye(N,N); B2 = randn(N,M); C2 = randn(P,N); D2 = randn(P,M);
 julia> ss2 = StateSpace(A2,B2,C2,D2);
 ```
 
-#VSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Parametric Types
 
@@ -145,8 +134,7 @@ top:
 }
 ```
 
-#VSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Interfaces and Contracts
 
@@ -166,8 +154,7 @@ function isstable{T}(sys::ControlCore.LtiSystem{T,Discrete{false}})
 end
 ```
 
-#VSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#VSLIDE?image=assets/kth-one-color-plane.png
 
 #### Interfaces and Contracts
 
@@ -185,8 +172,7 @@ end
 # `isstable(sys::IdType)` will simply work
 ```
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### [`IdentificationToolbox.jl`](https://github.com/KTH-AC/IdentificationToolbox.jl)
 
@@ -201,8 +187,7 @@ end
 - Standardization (separate interface from implementation), <!-- .element: class="fragment" -->
 - Other approaches such as frequency domain methods, ...    <!-- .element: class="fragment" -->
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### [`ControlToolbox.jl`](https://github.com/KTH-AC/ControlToolbox.jl)
 
@@ -214,7 +199,6 @@ end
 
 **Note:** Needs re-structuring and some more work.
 
-#HSLIDE
-[comment]: ?image=assets/kth-one-color-plane.png
+#HSLIDE?image=assets/kth-one-color-plane.png
 
 #### Thanks!
