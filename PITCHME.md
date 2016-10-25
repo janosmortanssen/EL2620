@@ -7,7 +7,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 **KTH Royal Institute of Technology**
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
 
 #### Background
 
