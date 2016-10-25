@@ -35,10 +35,10 @@ Notice the importance to have zero initial conditions
 
 #HSLIDE
 
-'''Matlab
+```matlab
 plot(u)
 plot(y)
 for k=1:10
   x(k) = k^2;
 end
-'''
+```
