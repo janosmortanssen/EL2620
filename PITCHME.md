@@ -35,7 +35,7 @@ Notice the importance to have zero initial conditions
 
 #HSLIDE
 
-'''matlab
+'''Matlab
 plot(u)
 plot(y)
 for k=1:10
