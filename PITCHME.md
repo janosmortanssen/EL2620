@@ -26,15 +26,9 @@
 Definition: Let $M$ be a signal
 space. The system $S:M\rightarrow M$ is linear if for all $u,v\in M$ and $\alpha\in \mathbf{R}$
 \begin{align*}
-S(\alpha u) &= \alpha S(u)\qquad\qquad\qquad \text{\textcolor{red}{scaling}}\\
-S(u+v)&=S(u)+S(v)\qquad \text{\textcolor{red}{superposition}}
+S(\alpha u) &= \alpha S(u)\qquad \text{scaling}\\
+S(u+v)&=S(u)+S(v)\qquad \text{superposition}
 \end{align*}
 
-\textbf{Example:} Linear time-invariant systems
-\begin{align*}
-\dot x(t) &= Ax(t)+Bu(t),\quad  y(t)=Cx(t), \quad x(0)=0\\
-y(t) &= g(t) \ast u(t)=\int_{0}^tg(\tau)u(t-\tau)d\tau\\
-Y(s) &= G(s)U(s)
-\end{align*}
 
 Notice the importance to have zero initial conditions
