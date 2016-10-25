@@ -25,10 +25,11 @@
 
 Definition: Let $M$ be a signal
 space. The system $S:M\rightarrow M$ is linear if for all $u,v\in M$ and $\alpha\in \mathbf{R}$
-\begin{align*}
+
+$$
 S(\alpha u) &= \alpha S(u)\qquad \text{scaling}\\
 S(u+v)&=S(u)+S(v)\qquad \text{superposition}
-\end{align*}
+$$
 
 
 Notice the importance to have zero initial conditions
