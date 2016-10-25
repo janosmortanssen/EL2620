@@ -1,7 +1,7 @@
 vertical-center:      false
 theme-override:       assets/kth.css
 logo:                 assets/kth-logo.png
-background:           assets/kth-one-color-lines.png
+background:           assets/banner_blue.png
 background-size:      contain
 highlight:            github
 mathjax:              TeX-MML-AM_HTMLorMML-full
