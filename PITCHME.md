@@ -42,4 +42,4 @@ for k=1:10
   x(k) = k^2;
 end
 ```
-Use for exmaple `help plot`to learn more avbout a function
+Use for exmaple `help plot` to learn more avbout a function
