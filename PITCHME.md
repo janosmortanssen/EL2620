@@ -8,7 +8,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 **KTH Royal Institute of Technology**
 
-#HSLIDE
+#HSLIDE?image=assets/banner_blue_striped.png
 
 #### Background
 
@@ -19,7 +19,7 @@ and [Niklas Everitt](mailto:neveritt@kth.se)
 
 <img src="figures/education.png" style="width: 400px;" align="right" />
 
-#HSLIDE?image=assets/kth-one-color-plane.png
+#HSLIDE
 
 #### Drawbacks
 
