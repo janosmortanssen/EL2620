@@ -18,3 +18,13 @@
 - Topic 2
 
 <img src="assets/banner_blue_striped.png" style="width: 400px;" align="right" />
+
+#HSLIDE
+
+## Linear Systems
+
+Definition: Let $M$ be a signal
+space. The system $S:M\rightarrow M$ is linear if for all $u,v\in M$ and $\alpha\in \mathbf{R}$
+
+
+Notice the importance to have zero initial conditions
