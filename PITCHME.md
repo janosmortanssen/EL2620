@@ -1,4 +1,4 @@
-#HSLIDE?image=assets/banner_blue_first.png
+#HSLIDE?image=assets/banner_blue_striped.png
 ### System Identification and Control Functionality in JULIA
 
 [Cristian R. Rojas](mailto:crro@kth.se), [Arda Aytekin](mailto:aytekin@kth.se)
