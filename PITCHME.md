@@ -35,6 +35,15 @@ $$
 
 Notice the importance to have zero initial conditions
 
+#VSLIDE
+
+### LTI Systems
+
+\\begin{align}
+&\sin\theta\\\\
+&\cos\theta
+\\end{align}
+
 #HSLIDE
 
 ```matlab
