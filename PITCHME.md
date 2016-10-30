@@ -1,25 +1,24 @@
 #HSLIDE?image=assets/banner_blue_striped.png
-### Title
+### EL2620 Nonlinear Control
+
+#### Lecture 1
 
 [Jonas Mårtensson](mailto:jonas1@kth.se)
 
-**Department of Automatic Control**,
+#HSLIDE
 
-**KTH Royal Institute of Technology**
+### Today's goal
+
+- Define a nonlinear dynamic system
+- Describe distinctive phenomena in nonlinear dynamic systems
+- Transform differential equations to first-order form
+- Derive equilibrium points
 
 #HSLIDE
 
-# Title
-## Title
-### Title
-#### Agenda
+### Linear Systems
 
-- Topic 1
-- Topic 2
-
-<img src="assets/banner_blue_striped.png" style="width: 400px;" align="right" />
-
-#HSLIDE
+#VSLIDE
 
 ### Linear Systems
 
