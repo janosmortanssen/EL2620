@@ -25,8 +25,11 @@
 **Definition:** Let $M$ be a signal
 space. The system $S:M\rightarrow M$ is linear if for all $u,v\in M$ and $\alpha\in \mathbf{R}$
 
+*Scaling:*
+$$ S(\alpha u) = \alpha S(u) $$
+
+*Superposition:*
 $$
-S(\alpha u) = \alpha S(u)\\\\
 S(u+v)=S(u)+S(v)
 $$
 
