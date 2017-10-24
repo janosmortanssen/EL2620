@@ -15,12 +15,12 @@
 - Derive equilibrium points
 - Qualitative behavior of linear systems
 
-## Covered material 
+#### Covered material 
 Khalil: pp 1 - 33
 
 #HSLIDE
 
-# What is a nonlinear system?
+## What is a nonlinear system?
 
 #HSLIDE
 
