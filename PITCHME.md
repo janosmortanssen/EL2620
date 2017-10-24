@@ -22,9 +22,13 @@ Khalil: pp 1 - 33
 
 ## What is a nonlinear system?
 
+#VSLIDE
+
+## A nonlinear system is a system that is not linear!
+
 #HSLIDE
 
-### Linear Systems
+## What is a linear system?
 
 #VSLIDE
 
@@ -41,7 +45,7 @@ $$
 S(u+v)=S(u)+S(v)
 $$
 
-Notice the importance to have zero initial conditions
+- What must hold for $S(0)$? |
 
 #VSLIDE
 
