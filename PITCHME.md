@@ -13,6 +13,14 @@
 - Describe distinctive phenomena in nonlinear dynamic systems
 - Transform differential equations to first-order form
 - Derive equilibrium points
+- Qualitative behavior of linear systems
+
+## Covered material 
+Khalil: pp 1 - 33
+
+#HSLIDE
+
+# What is a nonlinear system?
 
 #HSLIDE
 
