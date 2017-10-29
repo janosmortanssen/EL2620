@@ -6,6 +6,39 @@
 [Jonas Mårtensson](mailto:jonas1@kth.se)
 
 #HSLIDE
+### Disposition
+- 7.5 hp period 2
+- 14 2-hour lectures
+- 14 2-hour exercise sessions
+- 3 homework assignments (2 hp each)
+- 5-hour exam (1.5 hp)
+
+#HSLIDE
+### Instructors
+- Jonas Mårtensson, course responsible, lectures, jonas1@kth.se
+- Pedro Pereira, exercises, ppereira@kth.se
+- Joana Fonseca, homework, jfgf@kth.se
+- Arda Aytekin, extra (simulation), aytekin@kth.se
+
+#HSLIDE
+### Course goal
+The participants should get a solid theoretical foundation of nonlinear control systems combined with good engineering understanding. 
+
+You should after the course be able to 
+- understand common nonlinear control phenomena 
+- apply the most powerful nonlinear analysis methods
+- use some practical nonlinear control design methods
+
+#HSLIDE
+
+### Examination
+Homeworks are compulsory and have to be handed in on time (we are strict on this!).
+- Homework 1, Nov 17
+- Homework 2, Nov 30
+- Homework 3, Dec 14 
+
+Written 5h exam 08-13 on January 11, 2018
+#HSLIDE
 
 ### Today's goal
 
