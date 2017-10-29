@@ -40,6 +40,12 @@ Homeworks are compulsory and have to be handed in on time (we are strict on this
 Written 5h exam 08-13 on January 11, 2018
 #HSLIDE
 
+### Literature and course material
+#### Textbook
+Khalil, H. K., Nonlinear Control, (Global edition, 2015, Pearson Education Ltd, ISBN 978-1-292-06050-7)
+
+#HSLIDE
+
 ### Today's goal
 
 - Define a nonlinear dynamic system
