@@ -43,7 +43,9 @@ Written 5h exam 08-13 on January 11, 2018
 ### Literature and course material
 #### Textbook
 Khalil, H. K., Nonlinear Control, (Global edition, 2015, Pearson Education Ltd, ISBN 978-1-292-06050-7)
+
 <img src="figures/cover.png" alt="Drawing" style="width: 200px;"/>
+
 #HSLIDE
 
 ### Today's goal
