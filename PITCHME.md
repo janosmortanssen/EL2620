@@ -92,6 +92,4 @@ $$
 
 ### Sinusoidal input
 
-#VSLIDE
-![Logo](periodic.pdf)
-
+#VSLIDE?image=periodic.pdf
