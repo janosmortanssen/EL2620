@@ -88,22 +88,10 @@ $$
 
 - What must hold for $S(0)$? |
 
-#VSLIDE
-
-### LTI Systems
-
-\\begin{align}
-&\sin\theta\\\\
-&\cos\theta
-\\end{align}
-
 #HSLIDE
 
-```matlab
-plot(u)
-plot(y)
-for k=1:10
-  x(k) = k^2;
-end
-```
-Use for exmaple `help plot` to learn more avbout a function
+### Sinusoidal input
+
+#VSLIDE
+![Logo](periodic.pdf)
+
