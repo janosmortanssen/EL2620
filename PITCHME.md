@@ -46,6 +46,16 @@ Khalil, H. K., Nonlinear Control, (Global edition, 2015, Pearson Education Ltd, 
 
 <img src="figures/cover.png" alt="Drawing" style="width: 200px;"/>
 
+#VSLIDE
+#### Exercises, problem sets
+- Compendium on canvas
+- Problems from Khalil
+
+#VSLIDE
+#### Lecture notes
+- Occasional lecture notes, mostly lecturing on the board
+- Lecture notes from Khalil
+
 #HSLIDE
 
 ### Today's goal
@@ -56,7 +66,7 @@ Khalil, H. K., Nonlinear Control, (Global edition, 2015, Pearson Education Ltd, 
 - Derive equilibrium points
 - Qualitative behavior of linear systems
 
-#### Covered material 
+### Covered material 
 Khalil: pp 1 - 33
 
 #HSLIDE
@@ -88,8 +98,4 @@ $$
 
 - What must hold for $S(0)$? |
 
-#HSLIDE
 
-### Sinusoidal input
-
-#VSLIDE?image=figures/periodic.png
