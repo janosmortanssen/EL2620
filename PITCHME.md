@@ -92,4 +92,4 @@ $$
 
 ### Sinusoidal input
 
-#VSLIDE?image=periodic.pdf
+#VSLIDE?image=periodic.png
